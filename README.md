@@ -19,3 +19,4 @@ Testando o git lab.
 |------|-------|
 | Rodrigo | Infra-ágil |
 | Pedro | Perl, PHP |
+| Chico | Mesa Branca |
