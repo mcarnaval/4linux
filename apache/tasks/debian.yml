@@ -1,0 +1,8 @@
+- apt:
+    name: ['apache2', 'libapache2-mod-php']
+    state: present
+    update_cache: yes
+- service:
+    name: apache2
+    state: restarted
+    enabled: true

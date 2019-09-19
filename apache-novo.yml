@@ -1,0 +1,28 @@
+# Criar uma playbook que instala
+# o apache na máquina docker
+# ao invés de utilizar package
+# utilizar módulo "apt"
+# Garantir que o "serviço" do apache
+# Esteja iniciado e habilitado
+# na inicialização
+---
+- name: Instalando o Apache na máquina DOCKER com módulo Apt
+  hosts: docker
+  become: yes
+  tasks:
+  - apt:
+      name: apache2
+      state: present
+  - service:
+      name: apache2
+      state: started
+      enabled: true
+  - template:
+      src: /root/index.html
+      dest: /var/www/html/index.html
+      force: yes
+  #- copy:
+  #    src: /root/index.html
+  #    dest: /var/www/html/index.html
+  #    force: yes 
+...

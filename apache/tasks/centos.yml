@@ -1,0 +1,7 @@
+- yum:
+    name: ['httpd', 'php']
+    state: present
+- service:
+    name: httpd
+    state: restarted
+    enabled: true
