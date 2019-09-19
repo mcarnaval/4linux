@@ -12,3 +12,10 @@ Testando o git lab.
 ```php
 <?php phpinfo();
 ```
+
+### Tabelinha
+
+| Nome | Curso |
+|------|-------|
+| Rodrigo | Infra-ágil |
+| Pedro | Perl, PHP |
