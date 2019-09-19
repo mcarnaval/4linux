@@ -1,4 +1,4 @@
 - hosts: docker,automation
-  become: yes
+  become: true
   roles:
   - apache
